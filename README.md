@@ -27,5 +27,8 @@ The prometheus UI will be made available under [localhost:9090](http://localhost
 
 Changes to [static-metrics](./static-metrics) should show up pretty immediately in the prometheus ui, as the scrape and evaluation_interval interval is only 1 second. (yes, that's not a lot. I don't like waiting)
 
-For changes to the [relabel-configs](./prometheus.yml#L32) and [recording-rules.yml](./recording-rules.yml) to be effective, you will need to re-start the stack.
+For changes to the [relabel-configs](./prometheus.yml#L22) and [recording-rules.yml](./recording-rules.yml) to be effective, you will need to re-start the stack.
 
+## Node Exporter
+
+By uncommenting the last 4 lines from [prometheus.yml](./prometheus.yml#L27) and the code block starting at line 14 in [docker-compose.yml](./docker-compose.yml#L14), node-exporter will also spawn and be scraped by the prometheus instance. This give you a whole lot more non-synthetic metrics to play around with.

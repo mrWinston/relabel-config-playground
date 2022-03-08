@@ -24,7 +24,7 @@ scrape_configs:
         separator: ';'
         action: drop
         regex: 'apiserver_request_total;([^f]|f[^o]|fo[^o]).*'
-          #  - job_name: "node-exporter"
-          #    static_configs:
-          #      - targets:
-          #        - "node-exporter:9100"
+#  - job_name: "node-exporter"
+#    static_configs:
+#      - targets:
+#        - "node-exporter:9100"
