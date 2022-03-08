@@ -23,3 +23,9 @@ This will spin up prometheus and the static metrics server. The stack looks like
 
 ![stack overview](./docs/overview.png)
 
+The prometheus UI will be made available under [localhost:9090](http://localhost:9090).
+
+Changes to [static-metrics](./static-metrics) should show up pretty immediately in the prometheus ui, as the scrape and evaluation_interval interval is only 1 second. (yes, that's not a lot. I don't like waiting)
+
+For changes to the [relabel-configs](./prometheus.yml#L32) and [recording-rules.yml](./recording-rules.yml) to be effective, you will need to re-start the stack.
+
