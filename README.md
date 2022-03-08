@@ -11,7 +11,7 @@ file.
 
 ## Using this project
 
-> This short guide will be using `podman-compose`. If you're on `docker`, you should be able to just substitute `podman-compose` with `docker-compose`.
+> This short guide will be using `podman-compose`. If you're on `docker`, you should be able to just substitute `podman-compose` with `docker-compose`. But i did not test it with docker-compose.
 
 Start the stack using podman-compose:
 
